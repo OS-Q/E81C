@@ -1,0 +1,6 @@
+# 中科大
+#deb https://mirrors.ustc.edu.cn/archive.raspberrypi.org/ stretch main ui
+# 清华
+deb https://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ stretch main ui
+# 默认官方源
+# deb http://archive.raspberrypi.org/debian/ stretch main ui
