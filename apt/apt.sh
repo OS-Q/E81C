@@ -11,5 +11,8 @@ sudo apt update
 sudo apt upgrade -y
 
 #python3 install
-sudo apt install python2.7-dev python3-dev
+sudo apt install python-dev python3-dev -y
+sudo apt install python-pip python3-pip -y
+sudo apt install libopencv-dev -y
+sudo apt install build-essential python3-distlib python3-setuptools python3-wheel libzmq-dev libgdal-dev -y
 sudo pip3 install numpy
