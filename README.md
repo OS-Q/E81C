@@ -1,17 +1,27 @@
-# RPi
+﻿
+# Raspberry Pi
 
-[![sites](docs/Q.png)](http://qitas.cn)
+### 简介
 
-## 描述
+用于配置树莓派的运行环境和相应功能
 
-用于树莓派raspbain系统相应功能配置
+---
 
 ## 组成
 
-- 1、apt配置系统安装源
-- 2、web for opencv
+#### apt
+
+Raspbain系统的安装源配置
+
+#### mqtt
+
+用于mqtt通信的相关脚本
+
+
+---
 
 ## 说明
 
-本项目针对一些比较常用的树莓派开发，以脚本为主进行相关的系统配置
+2018-10-19: 规范工程
 
+[![sites](qitas/qitas.png)](http://www.qitas.cn)
