@@ -18,6 +18,11 @@ Raspbain系统的安装源配置,相应的安装脚本等
 - MQTT ,用于mqtt通信的相关脚本
 - Socket,用于TCP socket直连
 
+#### tools
+
+- dashboard 用于管理pi的WEB页面
+
+
 ---
 
 ## 说明
