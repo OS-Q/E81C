@@ -1,5 +1,5 @@
 ﻿
-# Raspberry Pi
+# for Raspberry Pi 
 
 ### 简介
 
@@ -11,17 +11,18 @@
 
 #### apt
 
-Raspbain系统的安装源配置
+Raspbain系统的安装源配置,相应的安装脚本等
 
-#### mqtt
+#### conn
 
-用于mqtt通信的相关脚本
-
+- MQTT ,用于mqtt通信的相关脚本
+- Socket,用于TCP socket直连
 
 ---
 
 ## 说明
 
+2018-10-22: 更改代码
 2018-10-19: 规范工程
 
 [![sites](qitas/qitas.png)](http://www.qitas.cn)
