@@ -10,7 +10,8 @@ import numpy
 HOST= "120.79.63.76"
 PORT= 1883
 
-SID= "/qitas"
+SID= "/rpi"
+
 user = {'username':"qitas", 'password':"qitas"}
 
 # 打开串口
@@ -26,17 +27,20 @@ def on_message(client, userdata, msg):
 
 def pypub():  
     while True:
-        #config1=input("input config1:")
-        waterGage=random.uniform(0.5,1)#config1#
-        #config2=input("input config2:")
-        voltage=random.uniform(3,5)#config2#
-        dummy={"waterGage":waterGage,"voltage":voltage}
+        waterGage=random.uniform(0.5,1)
+        voltage=random.uniform(3,5)
+        dummy={"waterGage":round(waterGage,2),"voltage":round(voltage,3)}
         jsondata=json.dumps(dummy)
+        #recv=json.loads(data)
+        #recv="{"waterGage":0.911,"voltage":4.191}"
+        #print(recv1)
+        #print(recv)
+        print("SID:"+SID)
         print(jsondata)
         client_id = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
         publish.single(SID, jsondata, qos = 1,hostname=HOST,port=PORT, client_id=client_id,auth = user)
-        print("qitas send")
-        time.sleep(20)
+       # print("qitas send")
+        time.sleep(16)
 
 if __name__ == '__main__':
     # client.publish("test", "你好 MQTT", qos=0, retain=False)  # 发布消息    

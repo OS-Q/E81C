@@ -9,6 +9,8 @@ HOST= "120.79.63.76"
 PORT= 1883
 
 SID= "/ssh/ip"
+user = {'username':"qitas", 'password':"qitas"}
+
 
 def get_ip_address(ifname):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -31,7 +33,7 @@ def ip2yun():
     while True:
         client_id = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
         ipdata=hostname+"@"+hostip
-        publish.single(SID, ipdata, qos = 1,hostname=HOST,port=PORT, client_id=client_id,auth = {'username':"qitas", 'password':"1234"})
+        publish.single(SID, ipdata, qos = 1,hostname=HOST,port=PORT, client_id=client_id,auth =user)
         time.sleep(60)
 
 if __name__ == '__main__':   
