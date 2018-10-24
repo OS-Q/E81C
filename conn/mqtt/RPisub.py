@@ -30,7 +30,8 @@ if __name__ == '__main__':
     # ser.write("qitas mqtt publish \n".encode())
     # publish.single("qitas", "qitas MQTT", qos = 1,hostname=HOST,port=PORT, client_id=client_id,auth = {'username':"Qitas", 'password':"123456"})
     client_id = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
-    client = mqtt.Client(client_id)    # ClientId不能重复，所以使用当前时间
+    print("client_id："+client_id)
+    client = mqtt.Client(client_id)    # ClientId不能重复，所以使用当前时间	
     client.username_pw_set("qitas", "qitas")  # 必须设置，否则会返回「Connected with result code 4」
     client.on_connect = on_connect
     client.on_message = on_message

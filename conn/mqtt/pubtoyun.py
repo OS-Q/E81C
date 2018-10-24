@@ -27,10 +27,10 @@ def on_message(client, userdata, msg):
 def pypub():  
     while True:
         #config1=input("input config1:")
-        waterGage=random.uniform(0.5,1)#config1#
+        voltage1=random.uniform(0.5,1)#config1#
         #config2=input("input config2:")
-        voltage=random.uniform(3,5)#config2#
-        dummy={"waterGage":waterGage,"voltage":voltage}
+        voltage2=random.uniform(3,5)#config2#
+        dummy={"data1":round(voltage1,3),"data2":round(voltage2,3)}
         jsondata=json.dumps(dummy)
         print(jsondata)
         client_id = time.strftime('%Y%m%d%H%M%S',time.localtime(time.time()))
