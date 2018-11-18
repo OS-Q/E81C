@@ -1,5 +1,8 @@
-﻿
-# for Raspberry Pi 
+﻿# [Raspberry Pi](https://github.com/qitas/RPi) 
+
+### qitas@qitas.cn
+
+---
 
 ### 简介
 
@@ -13,6 +16,10 @@
 
 Raspbain系统的安装源配置,相应的安装脚本等
 
+#### install
+
+项目安装脚本
+
 #### conn
 
 - MQTT ,用于mqtt通信的相关脚本
@@ -23,11 +30,9 @@ Raspbain系统的安装源配置,相应的安装脚本等
 - dashboard 用于管理pi的WEB页面
 
 
+
 ---
 
-## 说明
-
-2018-10-22: 更改代码
-2018-10-19: 规范工程
+## 为锻造最美之器
 
 [![sites](qitas/qitas.png)](http://www.qitas.cn)
