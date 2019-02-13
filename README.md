@@ -1,38 +1,36 @@
-﻿# [Raspberry Pi](https://github.com/qitas/RPi) 
-
-### qitas@qitas.cn
-
----
+﻿# [Raspbian](https://github.com/qitas/Raspbian) 
 
 ### 简介
 
-用于配置树莓派的运行环境和相应功能
+用于配置Raspbian系统的运行环境和相应功能
 
 ---
 
 ## 组成
 
-#### apt
+#### 
+#### [配置](install/) 
 
 Raspbain系统的安装源配置,相应的安装脚本等
 
-#### install
+#### [驱动](driver/) 
 
-项目安装脚本
+相关的外设驱动
 
-#### conn
+#### [连接](connect/) 
 
 - MQTT ,用于mqtt通信的相关脚本
 - Socket,用于TCP socket直连
 
-#### tools
+#### [工具](tools/) 
 
-- dashboard 用于管理pi的WEB页面
+- dashboard用于管理pi的WEB页面
 
 
 
 ---
 
-## 为锻造最美之器
+## 锻造最美之器
+### qitas@qitas.cn
 
 [![sites](qitas/qitas.png)](http://www.qitas.cn)
