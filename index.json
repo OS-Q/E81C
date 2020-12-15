@@ -1,0 +1,6 @@
+{
+    "name":"Raspbian",
+    "type":"server",
+    "url":"https://github.com/OS-Q/M08",
+    "version":"1.0.0"
+}
